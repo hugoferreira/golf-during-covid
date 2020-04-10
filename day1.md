@@ -80,3 +80,27 @@ minFree x=(1 to 2<<15).diff(x)(0)
 ```javascript
 minFree=x=>{for(i=1;;i++)if(!x.indexOf(i))return i}
 ```
+
+### (41) Julia by Henrique Ferrolho
+For `0 <= list size <= 2^16`
+```julia
+minFree(x::Set{Int})=setdiff(1:2^16,x)[1]
+```
+
+### (31) Julia untyped by Henrique Ferrolho
+For `0 <= list size <= 2^16`
+```julia
+minFree(x)=setdiff(1:2^16,x)[1]
+```
+
+### (56) Julia by Henrique Ferrolho
+For `0 <= list size <= 2e16`
+```julia
+minFree(x::Set{Int})=for i=1:Int(2e16) i∉x&&return i end
+```
+
+### (41) Julia untyped by Henrique Ferrolho
+For `0 <= list size <= 2e16`
+```julia
+minFree(x)=for i=1:2e16 i∉x&&return i end
+```
