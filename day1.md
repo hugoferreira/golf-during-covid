@@ -21,6 +21,18 @@ minFree of 10, 5, 9, 2, 24, 3, 1 returns 4
 
 ## Solutions
 
+### (21) Haskell by Hugo
+
+```haskell
+minFree x=[1..]\\x!!0
+```
+
+### (22) Haskell by Hugo
+
+```haskell
+minFree=head.([1..]\\)
+```
+
 ### (24) Haskell by Mafalda   
 
 ```haskell
