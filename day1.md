@@ -80,3 +80,8 @@ minFree x=(1 to 2<<15).diff(x)(0)
 ```javascript
 minFree=x=>{for(i=1;;i++)if(!x.indexOf(i))return i}
 ```
+
+### (64) Swift by Tiago Almeida
+```Swift
+let minFree={(l:[Int])in l.sorted().reduce(1){$0==$1 ?$1+1:$0}}
+```
