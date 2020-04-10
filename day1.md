@@ -45,10 +45,10 @@ minFree=head.([1..]\\)
 minFree x=head([1..]\\x)
 ```
 
-### (53) Python by Mafalda   
+### (48) Python by Mafalda   
 
 ```python
-def minFree(l):return min(set(range(1,2**15))-set(l))
+minFree=lambda x:min(set(range(1,2**15))-set(x))
 ```
 
 ### (63) Rust by André Silva
