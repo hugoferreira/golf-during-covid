@@ -21,6 +21,12 @@ minFree of 10, 5, 9, 2, 24, 3, 1 returns 4
 
 ## Solutions
 
+### (42) Javascript by Restivo
+
+```javascript
+minFree=(S,i=1)=>S.has(i)?minFree(S,++i):i
+```
+
 ### (21) Haskell by Hugo
 
 ```haskell
