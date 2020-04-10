@@ -21,8 +21,27 @@ minFree of 10, 5, 9, 2, 24, 3, 1 returns 4
 
 ## Solutions
 
-### (Chars) Language by Name  
-
-```haskell
-cenas = cenas
+### (63) Rust
+```rust
+let minFree=|x:Vec<u64>|(1..).filter(|i|!x.contains(i)).next();
+```
+### (54) Rust untyped
+```rust
+let minFree=|x|(1..).filter(|i|!x.contains(i)).next();
+```
+### (47) Scala
+```scala
+def minFree(x:Seq[Int])=(1 to 2<<15).diff(x)(0)
+```
+### (38) Scala untyped
+```scala
+def minFree(x)=(1 to 2<<15).diff(x)(0)
+```
+### (33) Scalaskell
+```scala
+minFree x=(1 to 2<<15).diff(x)(0)
+```
+### (51) JavaScript
+```javascript
+minFree=x=>{for(i=1;;i++)if(!x.indexOf(i))return i}
 ```
