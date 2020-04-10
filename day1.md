@@ -21,12 +21,6 @@ minFree of 10, 5, 9, 2, 24, 3, 1 returns 4
 
 ## Solutions
 
-### (Chars) Language by Name  
-
-```haskell
-cenas = cenas
-```
-
 ### (24) Haskell by Mafalda   
 
 ```haskell
