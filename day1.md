@@ -47,7 +47,7 @@ minFree=(S)=>_.difference(_.range(1,S.length+2), S)[0]
 minFree=(S)=>_.sortBy(S).findIndex((v,i)=>v!=i+1)+1||S.length+1
 ```
 
-### (21) Haskell by Hugo (fixed by Restivo)
+### (23) Haskell by Hugo (fixed by Restivo)
 
 ```haskell
 minFree x=([1..]\\x)!!0
