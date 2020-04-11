@@ -32,6 +32,12 @@ msc=maximum.ap(zipWith((length.).filter.(<)))tails
 msc(x)=maximum(count(>(x[i]),x[i:end]) for i=1:length(x))
 ```
 
+### (73) Python by António
+
+```python
+msc=lambda l: max([sorted(l[i:])[::-1].index(e) for i,e in enumerate(l)])
+```
+
 ### (76) Python by Mafalda
 
 ```python
