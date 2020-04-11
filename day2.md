@@ -31,3 +31,9 @@ msc=maximum.ap(zipWith((length.).filter.(<)))tails
 ```julia
 msc(x)=maximum(count(>(x[i]),x[i:end]) for i=1:length(x))
 ```
+
+### (76) Python by Mafalda
+
+```python
+msc=lambda l:max([len([x for x in l[e:] if x>l[e]]) for e in range(len(l))])
+```
