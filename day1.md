@@ -45,16 +45,6 @@ For `0 <= list size <= 2^16`
 minFree(x)=setdiff(1:2^16,x)[1]
 ```
 
-### (33) Scalaskell by André Silva
-```scala
-minFree x=(1 to 2<<15).diff(x)(0)
-```
-
-### (38) Scala untyped by André Silva
-```scala
-def minFree(x)=(1 to 2<<15).diff(x)(0)
-```
-
 ### (41) Julia by Henrique Ferrolho
 For `0 <= list size <= 2^16`
 ```julia
@@ -97,11 +87,6 @@ minFree=x=>{for(i=1;;i++)if(!x.indexOf(i))return i}
 ### (53) Javascript by Restivo (lodash,sort,reduce)
 ```javascript
 minFree=(S)=>_.sortBy(S).reduce((r,v)=>r==v?r+1:r,1)
-```
-
-### (54) Rust untyped by André Silva
-```rust
-let minFree=|x|(1..).filter(|i|!x.contains(i)).next();
 ```
 
 ### (55) Javascript by Restivo (lodash,difference)
