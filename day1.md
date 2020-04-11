@@ -44,7 +44,7 @@ minFree=(S)=>_.sortBy(S).reduce((r,v)=>r==v?r+1:r,1)
 
 ### (53) Javascript by Restivo (lodash,difference)
 ```javascript
-minFree=(S)=>_.difference(_.range(1,S.length), S)[0]
+minFree=(S)=>_.difference(_.range(1,S.length+2), S)[0]
 ```
 
 ### (21) Haskell by Hugo
