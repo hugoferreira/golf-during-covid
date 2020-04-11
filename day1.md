@@ -21,7 +21,12 @@ minFree of 10, 5, 9, 2, 24, 3, 1 returns 4
 
 ## Solutions
 
-### (42) Javascript by Restivo
+### (45) JavaScript by Restivo (iterative)
+```
+minFree=(S,i=0)=>{while(S.has(++i));return i}
+```
+
+### (42) Javascript by Restivo (recursive)
 
 ```javascript
 minFree=(S,i=1)=>S.has(i)?minFree(S,++i):i
