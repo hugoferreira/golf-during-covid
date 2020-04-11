@@ -37,6 +37,11 @@ minFree=(S,i=0)=>{while(S.has(++i));return i}
 minFree=(S)=>_.sortBy(S).findIndex((v,i)=>v!=i+1)+1
 ```
 
+### (53) Javascript by Restivo (lodash,sort,reduce)
+```javascript
+minFree=(S)=>_.sortBy(S).reduce((r,v)=>r==v?r+1:r,1)
+```
+
 ### (21) Haskell by Hugo
 
 ```haskell
