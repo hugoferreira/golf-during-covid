@@ -25,3 +25,9 @@ msc of 10,3,4,5,2 is 2
 ```haskell
 msc=maximum.ap(zipWith((length.).filter.(<)))tails
 ```
+
+### (57) Julia by Ferrolho
+
+```julia
+msc(x)=maximum(count(>(x[i]),x[i:end]) for i=1:length(x))
+```
