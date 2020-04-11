@@ -37,3 +37,9 @@ msc(x)=maximum(count(>(x[i]),x[i:end]) for i=1:length(x))
 ```python
 msc=lambda l:max([len([x for x in l[e:] if x>l[e]]) for e in range(len(l))])
 ```
+
+### (79) Haskell by Mafalda
+
+```haskell
+msc l=maximum(map length(groupBy(==)[x|x<-[0..length l-1],y<-drop x l,y>l!!x]))
+```
