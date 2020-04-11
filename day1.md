@@ -32,11 +32,6 @@ minFree=(S,i=1)=>S.has(i)?minFree(S,++i):i
 minFree=(S,i=0)=>{while(S.has(++i));return i}
 ```
 
-### (52) Javascript by Restivo (lodash,sort,find)
-```javascript
-minFree=(S)=>_.sortBy(S).findIndex((v,i)=>v!=i+1)+1
-```
-
 ### (53) Javascript by Restivo (lodash,sort,reduce)
 ```javascript
 minFree=(S)=>_.sortBy(S).reduce((r,v)=>r==v?r+1:r,1)
@@ -45,6 +40,11 @@ minFree=(S)=>_.sortBy(S).reduce((r,v)=>r==v?r+1:r,1)
 ### (55) Javascript by Restivo (lodash,difference)
 ```javascript
 minFree=(S)=>_.difference(_.range(1,S.length+2), S)[0]
+```
+
+### (64) Javascript by Restivo (lodash,sort,find)
+```javascript
+minFree=(S)=>_.sortBy(S).findIndex((v,i)=>v!=i+1)+1||S.length+1
 ```
 
 ### (21) Haskell by Hugo
