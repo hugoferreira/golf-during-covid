@@ -129,3 +129,8 @@ For `0 <= list size <= 2e16`
 ```julia
 minFree(x)=for i=1:2e16 i∉x&&return i end
 ```
+
+### (64) Python by António Ramadas
+```python
+minFree=lambda l:[i for i in range(1,len(l)+2) if i not in l][0]
+```
