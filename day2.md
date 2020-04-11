@@ -20,6 +20,12 @@ msc of 10,3,4,5,2 is 2
 
 ## Solutions
 
+### (43) Haskell by André Silva
+
+```haskell
+msc[]=0;msc(h:t)=max(sum[1|x<-t,h<x])$msc t
+```
+
 ### (50) Haskell by Hugo
 
 ```haskell
@@ -48,10 +54,4 @@ msc=lambda l:max([len([x for x in l[e:] if x>l[e]]) for e in range(len(l))])
 
 ```haskell
 msc l=maximum(map length(groupBy(==)[x|x<-[0..length l-1],y<-drop x l,y>l!!x]))
-```
-
-### (43) Haskell by André Silva
-
-```haskell
-msc[]=0;msc(h:t)=max(sum[1|x<-t,h<x])$msc t
 ```
