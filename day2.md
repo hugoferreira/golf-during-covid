@@ -20,6 +20,12 @@ msc of 10,3,4,5,2 is 2
 
 ## Solutions
 
+### (42) Haskell by Restivo
+
+```haskell
+msc[]=0;msc(h:t)=sum[1|y<-t,y>h]`max`msc t
+```
+
 ### (43) Haskell by André Silva
 
 ```haskell
