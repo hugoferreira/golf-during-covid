@@ -32,6 +32,11 @@ msc[]=0;msc(h:t)=sum[1|y<-t,y>h]`max`msc t
 msc[]=0;msc(h:t)=max(sum[1|x<-t,h<x])$msc t
 ```
 
+### (43) Haskell by Hugo
+```haskell
+msc l=maximum[sum[1|x<-t,x>h]|h:t<-tails l]
+```
+
 ### (50) Haskell by Hugo
 
 ```haskell
