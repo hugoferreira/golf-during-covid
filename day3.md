@@ -56,3 +56,9 @@ mncss(x)=maximum(sum(x[s]) for s=subsets(1:length(x)) if any(≠(1),diff(s)))
 s=lambda l:max(l)if max(l)<0else sum([max(x,0)for x in l])
 mncss=lambda l:max([s(l[:i])+s(l[i+1:])for i in range(1,len(l)-1)])
 ```
+
+### (177) Python by Mafalda
+```python
+s=lambda l:[l[i:j] for i in range(len(l)+1) for j in range(i,len(l)+1)]
+mncss=lambda l:max([sum(x) for x in [list(x) for i in range(len(l)+1) for x in c(l,i)] if x not in s(l)])
+```
