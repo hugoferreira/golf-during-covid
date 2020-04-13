@@ -11,15 +11,15 @@
 mncss l=maximum$map sum(subsequences l\\(inits l>>=tails))
 ```
 
+### (60) Haskell by André Silva
+```haskell
+-- point-free version of Restivo's solution
+mncss=liftA2(\\)subsequences(tails>=>inits)>>>maximum.map sum
+```
+
 ### (62) Haskell by André Silva
 ```haskell
 mncss x=maximum$map sum[y|y<-subsequences x,not$isInfixOf y x]
-```
-
-### (63) Haskell by André Silva
-```haskell
--- point-free version of Restivo's solution
-mncss=liftA2(\\)subsequences((>>=tails).inits)>>>maximum.map sum
 ```
 
 ### (75) Julia by Ferrolho
