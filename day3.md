@@ -6,6 +6,12 @@
 
 ## Solutions
 
+### (57) Haskell by Hugo (based on Restivo)
+
+```
+mncss l=maximum$sum<$>(subsequences l\\(inits l>>=tails))
+```
+
 ### (58) Haskell by Restivo
 ```haskell
 mncss l=maximum$map sum(subsequences l\\(inits l>>=tails))
