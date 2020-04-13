@@ -66,3 +66,19 @@ msc=lambda l:max([len([x for x in l[e:] if x>l[e]]) for e in range(len(l))])
 ```haskell
 msc l=maximum(map length(groupBy(==)[x|x<-[0..length l-1],y<-drop x l,y>l!!x]))
 ```
+
+### (100 😢) Swift by Tiago
+
+```swift
+func msc<T:Comparable>(_ l:[T]){l.enumerated().map{i,e in l.dropFirst(i).filter{e<$0}.count}.max()!}
+```
+
+Either by ignorance or by Swift type system, in order to work with Array of Arrays we need to teach Swift how we want to compare those arrays. 
+
+```swift
+extension Array: Comparable where Element: Comparable {
+    public static func < (lhs: [Element], rhs: [Element]) -> Bool {
+        return lhs.count < rhs.count
+    }
+}
+```
