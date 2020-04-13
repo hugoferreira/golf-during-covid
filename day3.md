@@ -1,8 +1,22 @@
 # Challenge 3 (12/04/2020)
 
+Given a list of summable things, the maximum segment sum is highest value given by summing all the elements of a contiguous group of items. In this problem, you'll have to find the highest value given by the sum of all the elements of a non-contiguous subsequence of the original list.
+
 ## Premises
 
+- There are no non-contiguous subsequences of a list with two or fewer elements (duh!);
+- A non-contiguous subsequence is still a sequence, but which has at least one of the constituting elements originally not contiguous to the others (left or right);
+- As long as the elements are summable, there are no additional constrains;
+- Lists are finite.
+
 ## Examples
+
+```
+mncss [-4,-3,4] returns 0 (given by [-4,4])
+mncss [-4,-3,-7,2,1,-2,-1,-4] returns 2 (given by [2,1,-1])
+mncss [1,2,3,4] returns 8 (given by [1,3,4])
+mncss [2,4] is an invalid input with non-specified output
+```
 
 ## Solutions
 
