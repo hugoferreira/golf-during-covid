@@ -14,6 +14,10 @@ mncss l=maximum$map sum(subsequences l\\(inits l>>=tails))
 ### (60) Haskell by André Silva
 ```haskell
 -- point-free version of Restivo's solution
+import Data.List
+import Control.Applicative
+import Control.Arrow
+import Control.Monad
 mncss=liftA2(\\)subsequences(tails>=>inits)>>>maximum.map sum
 ```
 
