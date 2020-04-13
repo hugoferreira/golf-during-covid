@@ -1,4 +1,4 @@
-### (60) Haskell by Restivo
+### (58) Haskell by Restivo
 ```haskell
 mncss l=maximum$map sum(subsequences l\\((inits l)>>=tails))
 ```
