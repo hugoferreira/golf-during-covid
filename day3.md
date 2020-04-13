@@ -31,13 +31,13 @@ mncss l=maximum$sum<$>(subsequences l\\(inits l>>=tails))
 mncss l=maximum$map sum(subsequences l\\(inits l>>=tails))
 ```
 
-### (60) Haskell by André Silva
+### (58) Haskell by Hugo (based on André Silva)
 ```haskell
--- point-free version of Restivo's solution
-import Data.List
-import Control.Applicative
-import Control.Arrow
-import Control.Monad
+mncss x=maximum[sum y|y<-subsequences x,not$isInfixOf y x]
+```
+
+### (60) Haskell by André Silva (based on Restivo)
+```haskell
 mncss=liftA2(\\)subsequences(tails>=>inits)>>>maximum.map sum
 ```
 
