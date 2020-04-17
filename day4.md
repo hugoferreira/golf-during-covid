@@ -31,7 +31,7 @@ Given a text corpus as input, the program `ana n` generates all the possible ana
 - Each anagram appears in a new line;
 - Anagrams are separated by words with a semi-colon `: `;
 - Words are separated by commas `,`; 
-- You must read the corpus from stdin and output the result to stdout.
+- You must read the corpus from _stdin_ and output the result to _stdout_.
 
 ## Examples
 
