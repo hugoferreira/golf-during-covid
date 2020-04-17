@@ -2,7 +2,7 @@
 
 ## Background
 
-An ancient book was found with the mysterious title "EHT CDOORRSSW AAAGMNR ACDIINORTY". No less mysterious was the contents, that left linguists excited and puzzled for years about their meaning. Most postulated this book was nothing less than the rosetta stone for the long forgotten written language of atlantis; a dictionary of some sorts to 17th century english. All attempts to decode its grammar, though, failed. The book was organized into 27 chapters, and each chapter contained something like this:
+An ancient book was found with the mysterious title _EHT CDOORRSSW AAAGMNR ACDIINORTY_. No less mysterious was the contents, that left linguists excited and puzzled for years about their meaning. Most postulated this book was nothing less than the rosetta stone for the long forgotten written language of atlantis; a dictionary of some sorts to 17th century english. All attempts to decode its grammar, though, failed. The book was organized into 27 chapters, and each chapter contained something like this:
 
 ```
 VI --------------
@@ -21,16 +21,16 @@ Given a text corpus as input, the program `ana n` generates all the possible ana
 
 ## Premises
 
-- The input corpus is a list of words, separated by spaces (' ') or new lines ('\n');
-- The program should disregard any punctuation (e.g. ,!;-/), so for all intended purposes;
-- The set of valid characters that comprise a word is [a-zA-Z];
+- The input corpus is a list of words, separated by spaces ` ` or new lines `\n`;
+- The program should disregard any punctuation `,!;-/_`, so for all intended purposes;
+- The set of valid characters that comprise a word is `[a-zA-Z]`;
 - The program is case-insensitive;
 - There should be no repeated anagrams;
 - For each anagram, there should be no repeated corresponding words;
 - Both the anagrams and the corresponding words are to be output in lexicographic ascendent order;
 - Each anagram appears in a new line;
-- Anagrams are separated by words with a semi-colon (': ');
-- Words are separated by commas (','); 
+- Anagrams are separated by words with a semi-colon `: `;
+- Words are separated by commas `,`; 
 - You must read the corpus from stdin and output the result to stdout.
 
 ## Examples
