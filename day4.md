@@ -42,6 +42,26 @@ eginrr: ringer
 eginrs: resign,signer,singer
 ```
 
+```
+$> ana 4 < echo "Thou hast ignore the region where the ringer and the singer resigns. The signer, Has Kell"
+hotu: thou
+ahst: hast
+ekll: kell
+```
+
+```
+$> ana 2 < echo "Thou hast ignore the region where the ringer and the singer resigns. The signer, Has Kell"
+```
+
+```
+$> ana 3 < echo "cab"
+abc: cab
+```
+
+```
+$> ana 3 < echo ""
+```
+
 ## Test Files
 
 ## Solutions
