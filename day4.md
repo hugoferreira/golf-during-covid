@@ -39,7 +39,7 @@ Given a text corpus as input, the program `ana n` generates all the possible ana
 $> ana 6 < echo "Thou hast ignore the region where the ringer and the singer resigns. The signer, Has Kell"
 eginor: ignore,region 
 eginrr: ringer
-eginrs: resign,signer,singer
+eginrs: signer,singer
 ```
 
 ```
