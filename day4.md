@@ -1,4 +1,4 @@
-# Challenge 4 (17/04/2020): EHT CDOORRSSW AAAGMNR ACDIINORTY
+# Challenge 4 (17/04/2020): honorificabilitudinitatibus
 
 ## Background
 
