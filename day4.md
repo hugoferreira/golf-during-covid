@@ -83,7 +83,6 @@ eht: the
 
 ## Test Files
 
-Input: [Shakespeare's Love's Labour's Lost](data/day4/loves-labours-lost.in)
-Output for `ana 5`: [file](data/day4/loves-labours-lost.ana5)
+* `ana 5` [Shakespeare's Love's Labour's Lost](data/day4/loves-labours-lost.in) produces [this output](data/day4/loves-labours-lost.ana5).
 
 ## Solutions
