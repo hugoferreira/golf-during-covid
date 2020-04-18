@@ -22,7 +22,7 @@ Given a text corpus as input, the program `ana n` generates all the possible ana
 ## Premises
 
 - The input corpus is a list of words, separated by spaces ` ` or new lines `\n`;
-- The program should disregard any punctuation `,!;-/_`, so for all intended purposes;
+- The program should disregard any punctuation (e.g. `,!;-/_`) for all intended purposes;
 - The set of valid characters that comprise a word is `[a-zA-Z]`;
 - The program is case-insensitive;
 - There should be no repeated anagrams, e.g. `abc = bca = cba`; the one to appear is the one that is lexicographically ordered, i.e., `abc`.
