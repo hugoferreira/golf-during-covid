@@ -1,4 +1,4 @@
-# Challenge 4 (17/04/2020): honorificabilitudinitatibus
+# Challenge 4 (17/04/2020): aabbcdfhiiiiiiilnnoorstttuu
 
 ## Background
 
