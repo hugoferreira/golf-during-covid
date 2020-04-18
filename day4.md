@@ -69,6 +69,11 @@ abc: cab
 $> ana 3 < echo ""
 ```
 
+```
+$> ana 3 "cba aaaa abc bbbb abc bca zzzz"
+abc: abc,bca,cba
+```
+
 ## Test Files
 
 ## Solutions
