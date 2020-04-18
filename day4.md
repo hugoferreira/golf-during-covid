@@ -87,6 +87,16 @@ eht: the
 
 ## Solutions
 
+### (165) Python by Duarte (w/o imports)
+```python
+import re as e
+import sys as y
+from collections import defaultdict as d
+o,r=sorted,d(set)
+[r["".join(o(w))].add(w)for w in e.split("\W"," ".join(y.stdin).lower())if len(w)==int(y.argv[1])]
+[print(w+": "+",".join(o(r[w])))for w in o(r)]
+```
+
 ### (168) Haskell by Hugo (230 w/o IO)
 
 ```haskell
