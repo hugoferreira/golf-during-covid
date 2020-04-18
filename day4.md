@@ -70,8 +70,15 @@ $> ana 3 < echo ""
 ```
 
 ```
-$> ana 3 "cba aaaa abc bbbb abc bca zzzz"
+$> ana 3 < echo "cba aaaa abc bbbb abc bca zzzz"
 abc: abc,bca,cba
+```
+
+```
+$> ana 3 < echo "bca bcd abc acb cdb the abc"
+abc: abc,acb,bca
+bcd: bcd,cdb
+eht: the
 ```
 
 ## Test Files
