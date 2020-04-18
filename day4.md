@@ -86,3 +86,12 @@ eht: the
 * `ana 5` [Shakespeare's Love's Labour's Lost](data/day4/loves-labours-lost.in) produces [this output](data/day4/loves-labours-lost.ana5).
 
 ## Solutions
+
+### (168) Haskell by Hugo (230 w/o IO)
+
+```haskell
+-- IO ------------------------------------------------------------
+main=do;[n]<-getArgs;i<-getContents;putStrLn$ana(read n::Int)i
+-- ana n s -------------------------------------------------------
+s=sort;f#o=f$(.s).o.s;ana n x=concatMap(\g->s g!!0<>": "<>intercalate","(s g)<>"\n")$groupBy#(==)$sortBy#compare$nub[e|e<-wordsBy(not.isLetter)$toLower<$>x,n==length e]
+```
