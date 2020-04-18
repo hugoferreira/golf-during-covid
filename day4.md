@@ -95,3 +95,24 @@ main=do;[n]<-getArgs;i<-getContents;putStrLn$ana(read n::Int)i
 -- ana n s -------------------------------------------------------
 s=sort;f#o=f$(.s).o.s;ana n x=concatMap(\g->s g!!0<>": "<>intercalate","(s g)<>"\n")$groupBy#(==)$sortBy#compare$nub[e|e<-wordsBy(not.isLetter)$toLower<$>x,n==length e]
 ```
+
+### (227) Python by Mafalda (335 w/o IO)
+
+```python
+## IO
+def readInput():
+ i = []
+ while True:
+  try: l = input().split()
+  except EOFError: break
+  i=i+l
+ return i
+
+## ana n s
+def ana(n, l):
+ a = d(list)
+ rp = '|'.join(map(esc, p))
+ for w in set(chain(*[split(rp,w.lower()) for w in l])):
+  if(len(w)==n): a["".join(sorted(w))].append(w)
+ [print(k+": "+",".join(sorted(a[k]))) for k in sorted(a.keys())]
+```
