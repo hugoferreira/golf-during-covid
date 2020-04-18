@@ -83,6 +83,7 @@ eht: the
 
 ## Test Files
 
-[Shakespeare's Love's Labour's Lost](data/day4/loves-labours-lost.txt)
+Input: [Shakespeare's Love's Labour's Lost](data/day4/loves-labours-lost.in)
+Output for `ana 5`: [file](data/day4/loves-labours-lost.ana5)
 
 ## Solutions
