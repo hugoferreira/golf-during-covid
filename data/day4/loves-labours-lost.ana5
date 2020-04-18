@@ -20,7 +20,7 @@ abefl: fable
 abekr: break
 abelm: blame
 abels: sable
-abelt: table,bleat
+abelt: bleat,table
 abemr: amber
 abems: beams
 abeov: above
@@ -47,7 +47,7 @@ acder: cedar
 aceep: peace
 acefs: faces
 acegr: grace
-aceht: teach,cheat
+aceht: cheat,teach
 aceln: clean
 acelo: caelo
 acelp: place
@@ -84,13 +84,13 @@ adeis: aside,ideas
 adeiu: adieu
 adekn: naked
 ademn: amend
-ademr: dream,armed
+ademr: armed,dream
 adems: dames
 adent: nated
 adeor: adore
 adepv: paved
-aders: reads,dares
-adert: tread,rated
+aders: dares,reads
+adert: rated,tread
 adesv: saved
 adfrw: dwarf
 adgru: guard
@@ -112,7 +112,7 @@ aeent: eaten
 aeeps: pease
 aefls: false
 aefmr: frame
-aefrs: fears,fares
+aefrs: fares,fears
 aefrt: after
 aefst: feast
 aegln: angel
@@ -142,12 +142,12 @@ aelmt: metal
 aelno: alone
 aelnr: learn
 aelpp: apple
-aelpr: pearl,parle
+aelpr: parle,pearl
 aelqu: equal
 aelst: least,tales
-aelsv: slave,salve
+aelsv: salve,slave
 aeluv: value
-aemns: names,means
+aemns: means,names
 aemnt: meant
 aemrt: mater
 aenot: oaten
@@ -163,7 +163,7 @@ aersw: swear,wares,wears
 aersy: years
 aertw: water
 aerwy: weary
-aestt: taste,state
+aestt: state,taste
 aestw: sweat
 affst: staff
 afhit: faith
@@ -202,7 +202,7 @@ ailrt: trial
 ainps: spain
 ainpt: paint
 ainrt: train
-ainst: stain,saint
+ainst: saint,stain
 ainsw: swain
 aintw: twain
 aiprt: parti
@@ -239,7 +239,7 @@ bdirs: birds
 bdloo: blood
 bdnou: bound
 bdotu: doubt
-begin: being,begin
+begin: begin,being
 begot: begot
 beist: bites
 bekor: broke
@@ -247,7 +247,7 @@ belly: belly
 belno: noble
 below: elbow
 belss: bless
-benor: nebor,borne
+benor: borne,nebor
 benos: bones
 benoy: ebony
 beors: robes
@@ -275,7 +275,7 @@ cdeit: edict
 cdeor: credo
 cdhil: child
 cdipu: cupid
-cdlou: could,cloud
+cdlou: cloud,could
 ceehk: cheek
 ceehn: hence
 ceeip: piece
@@ -367,7 +367,7 @@ dlouw: would
 dnosu: sound
 doprs: drops
 dopru: proud
-dorsw: words,sword
+dorsw: sword,words
 dorwy: dowry
 drstu: durst
 dstuy: study
@@ -380,9 +380,9 @@ eegnr: green
 eegpr: perge
 eegrt: greet
 eehps: sheep
-eehrt: three,there
+eehrt: there,three
 eehrw: where
-eehst: these,sheet
+eehst: sheet,these
 eehtt: teeth
 eejlw: jewel
 eekps: keeps
@@ -398,7 +398,7 @@ eentv: event
 eenuv: venue
 eepst: steep
 eerst: trees
-eersv: serve,verse,sever
+eersv: serve,sever,verse
 eertw: twere
 eervy: every
 eesst: seest
@@ -441,7 +441,7 @@ ehosw: whose
 ehsst: hests
 eikln: inkle
 eiklr: liker
-eilms: smile,miles
+eilms: miles,smile
 eilnn: linen
 eilns: lines
 eilrv: liver
@@ -455,10 +455,10 @@ einsw: swine
 eintv: venit
 eiprz: prize
 eipst: spite
-eiqtu: quite,quiet
+eiqtu: quiet,quite
 eirst: tires
 eirtw: write
-eisvw: wives,views
+eisvw: views,wives
 ejkrs: jerks
 ejnoy: enjoy
 ejsst: jests
@@ -497,7 +497,7 @@ eoprw: power
 eopsy: poesy
 eoqtu: quote
 eorrr: error
-eorss: sores,roses
+eorss: roses,sores
 eorst: store
 eorsw: swore,worse
 eprsu: purse
@@ -533,9 +533,9 @@ ghiss: sighs
 ghist: sight
 ghitw: wight
 ghoru: rough
-ghotu: tough,ought
+ghotu: ought,tough
 gilrs: girls
-ginss: sings,signs
+ginss: signs,sings
 ginsw: wings
 glnsu: lungs
 glory: glory
@@ -563,7 +563,7 @@ hoqtu: quoth
 horst: short
 horsu: hours
 hortt: troth
-hortw: worth,throw
+hortw: throw,worth
 hossw: shows
 hostu: shout,south
 hotuy: youth
@@ -572,7 +572,7 @@ iilmt: limit
 iilno: ilion
 iistv: visit
 ijnot: joint
-iklls: skill,kills
+iklls: kills,skill
 illps: spill
 illst: still
 illsw: wills
