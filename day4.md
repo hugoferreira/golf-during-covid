@@ -50,6 +50,13 @@ hotu: thou
 ```
 
 ```
+ana 4 < echo "Thou.hast.ignore.the.region.where.the.ringer.and.the.singer.resigns.The.signer,Has.Kell!"
+ahst: hast
+ekll: kell
+hotu: thou
+```
+
+```
 $> ana 2 < echo "Thou hast ignore the region where the ringer and the singer resigns. The signer, Has Kell"
 ```
 
