@@ -106,6 +106,12 @@ main=do;[n]<-getArgs;i<-getContents;putStrLn$ana(read n::Int)i
 s=sort;f#o=f$(.s).o.s;ana n x=concatMap(\g->s g!!0<>": "<>intercalate","(s g)<>"\n")$groupBy#(==)$sortBy#compare$nub[e|e<-wordsBy(not.isLetter)$toLower<$>x,n==length e]
 ```
 
+### (224) JavaScript by Restivo
+
+```javascript
+ana=(n,s)=>{h={};a=[...(new Set(s.split(/[^\w]+/).map(w=>w.toLowerCase()).filter(w=>w.length==n)))].sort().forEach(w=>{o=w.split('').sort().join('');h[o]?h[o].push(w):h[o]=[w]});r='';for (w in h)r+=w+': '+h[w]+'\n';return r}
+```
+
 ### (227) Python by Mafalda (335 w/o IO)
 
 ```python
@@ -127,7 +133,7 @@ def ana(n, l):
  [print(k+": "+",".join(sorted(a[k]))) for k in sorted(a.keys())]
 ```
 
-### (231) Perby by Restivo
+### (231) Perl by by Restivo
 ```perl
 use List::MoreUtils qw(uniq);
 
