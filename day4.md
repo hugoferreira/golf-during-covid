@@ -126,3 +126,10 @@ def ana(n, l):
   if(len(w)==n): a["".join(sorted(w))].append(w)
  [print(k+": "+",".join(sorted(a[k]))) for k in sorted(a.keys())]
 ```
+
+### (231) Perby by Restivo
+```perl
+use List::MoreUtils qw(uniq);
+
+while(<STDIN>){$_=~s/[^\w]+/ /g;@w=grep{length $_==$ARGV[0]}(split/ /,$_);foreach(@w){$s=join"",sort split//,lc$_;$h{$s}=$h{$s}." ".lc$_;}}foreach $k(sort keys%h){$w=join ",",uniq sort grep{$_ ne''}split/ /,%h{$k};print"$k: $w\n";}
+```
