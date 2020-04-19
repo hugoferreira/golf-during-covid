@@ -106,6 +106,12 @@ main=do;[n]<-getArgs;i<-getContents;putStrLn$ana(read n::Int)i
 s=sort;f#o=f$(.s).o.s;ana n x=concatMap(\g->s g!!0<>": "<>intercalate","(s g)<>"\n")$groupBy#(==)$sortBy#compare$nub[e|e<-wordsBy(not.isLetter)$toLower<$>x,n==length e]
 ```
 
+### (214) JavaScript by Pedro
+
+```javascript
+ana=(n,s)=>Object.entries(s.toLowerCase().match(/\w+/g).reduce((a,x)=>{if(x.length==n){t=[...x].sort().join(""),(a[t]=a[t]||new Set).add(x)}return a},{})).map(([a,b])=>a+": "+[...b].sort().join()).sort().join("\n")
+```
+
 ### (224) JavaScript by Restivo
 
 ```javascript
