@@ -12,6 +12,8 @@ Thee didn't wan't to loseth thy headeth, so thee hadst to beest extremely carefu
 
 The function `cake` receives an array containing only 0's and 1's and returns the size of the largest consecutive substring having exactly the same number of 0's and 1's. 
 
+**Note:** Extra marks if your solution works with arrays up to 50,000 binary numbers.
+
 ## Examples
 
 ```
