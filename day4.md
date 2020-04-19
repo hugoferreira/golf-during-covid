@@ -112,6 +112,17 @@ s=sort;f#o=f$(.s).o.s;ana n x=concatMap(\g->s g!!0<>": "<>intercalate","(s g)<>"
 ana=(n,s)=>{h={};a=[...(new Set(s.split(/[^\w]+/).map(w=>w.toLowerCase()).filter(w=>w.length==n)))].sort().forEach(w=>{o=w.split('').sort().join('');h[o]?h[o].push(w):h[o]=[w]});r='';for (w in h)r+=w+': '+h[w]+'\n';return r}
 ```
 
+### (226) Python by António
+
+```python
+s=OrderedDict()
+for z in sorted([w for w in re.findall(f'[a-z]+',sys.stdin.read().lower())if len(w)==int(sys.argv[1])]):
+    w=''.join(sorted(z))
+    s[w]=s.get(w,[])+[z]
+for k,v in sorted(s.items()):
+    print(k+': '+','.join(sorted(set(v))))
+```
+
 ### (227) Python by Mafalda (335 w/o IO)
 
 ```python
