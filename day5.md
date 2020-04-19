@@ -1,0 +1,51 @@
+# Challenge 4 (17/04/2020): The Princess and the Cake
+
+## Background
+
+"Thou shalt not vex the princess or thee might loseth thy head" wast common knowledge among all villagers. And every year the dreadful day would arrive; the day someone would beest chosen to cutteth that lady birthday cake. And this year, thee wast the chosen one. 
+
+The cake wast gorgeous, and long, very long; with white and black chocolate strips of various sizes. And the princess wast adamant, the lady wanted the largest piece of cake possible, but the lady wanted to has't the exact same amount of white and black chocolate.
+
+Thee didn't wan't to loseth thy headeth, so thee hadst to beest extremely careful or face the dreaded guillotine!
+
+## Specification
+
+The function `cake` receives an array containing only 0's and 1's and returns the size of the largest consecutive substring having exactly the same number of 0's and 1's. 
+
+## Examples
+
+```
+cake([])
+0
+```
+
+
+```
+cake([1])
+0
+```
+
+```
+cake([0,1])
+2
+```
+
+```
+cake([0,1,0])
+2
+```
+
+```
+cake([0,1,1,0])
+4
+```
+
+```
+cake([0,0,0,1,1,1,0,0,1,1,0,1,1,1,0,0,0,1,1,0,1,1,0,1,0,1,0,1])
+20
+```
+
+```
+cake([0,1,0,1,0,1,0,1,0,1,0,1,0,1,0,1,0,1,0,1,0,1,0,1,0,1,0,1])
+28
+```
