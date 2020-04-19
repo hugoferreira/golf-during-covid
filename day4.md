@@ -112,12 +112,6 @@ s=sort;f#o=f$(.s).o.s;ana n x=concatMap(\g->s g!!0<>": "<>intercalate","(s g)<>"
 ana=(n,s)=>Object.entries(s.toLowerCase().match(/\w+/g).reduce((a,x)=>{if(x.length==n){t=[...x].sort().join(""),(a[t]=a[t]||new Set).add(x)}return a},{})).map(([a,b])=>a+": "+[...b].sort().join()).sort().join("\n")
 ```
 
-### (224) JavaScript by Restivo
-
-```javascript
-ana=(n,s)=>{h={};a=[...(new Set(s.split(/[^\w]+/).map(w=>w.toLowerCase()).filter(w=>w.length==n)))].sort().forEach(w=>{o=w.split('').sort().join('');h[o]?h[o].push(w):h[o]=[w]});r='';for (w in h)r+=w+': '+h[w]+'\n';return r}
-```
-
 ### (226) Python by António
 
 ```python
@@ -155,4 +149,10 @@ def ana(n, l):
 use List::MoreUtils qw(uniq);
 
 while(<STDIN>){$_=~s/[^\w]+/ /g;@w=grep{length $_==$ARGV[0]}(split/ /,$_);foreach(@w){$s=join"",sort split//,lc$_;$h{$s}=$h{$s}." ".lc$_;}}foreach $k(sort keys%h){$w=join ",",uniq sort grep{$_ ne''}split/ /,%h{$k};print"$k: $w\n";}
+```
+
+### (244) JavaScript by Restivo
+
+```javascript
+ana=(n,s)=>{h={};a=[...(new Set(s.split(/[^\w]+/).map(w=>w.toLowerCase()).filter(w=>w.length==n)))].sort().forEach(w=>{o=w.split('').sort().join('');h[o]?h[o].push(w):h[o]=[w]});r='';for (w of Object.keys(h).sort())r+=w+': '+h[w]+'\n';return r}
 ```
