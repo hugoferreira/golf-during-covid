@@ -112,6 +112,13 @@ s=sort;f#o=f$(.s).o.s;ana n x=concatMap(\g->s g!!0<>": "<>intercalate","(s g)<>"
 ana=(n,s)=>Object.entries(s.toLowerCase().match(/\w+/g).reduce((a,x)=>{if(x.length==n){t=[...x].sort().join(""),(a[t]=a[t]||new Set).add(x)}return a},{})).map(([a,b])=>a+": "+[...b].sort().join()).sort().join("\n")
 ```
 
+### (223) Scala by André Silva
+
+```scala
+import scala.io.Source.stdin
+def ana(n:Int)=stdin.getLines.mkString(" ").split("\\W+").map(_.toLowerCase).groupBy(_.sorted).mapValues(_.sorted.distinct.toSeq).filter(_._1.length==n).toSeq.sortBy(_._1).foreach{case(k,v)=>println(k+": "+v.mkString(","))}
+```
+
 ### (226) Python by António
 
 ```python
