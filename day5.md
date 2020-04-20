@@ -44,6 +44,16 @@ cake([0,1,0,1,0,1,0,1,0,1,0,1,0,1,0,1,0,1,0,1,0,1,0,1,0,1,0,1]) -> 28
 
 ## Solutions
 
+### (79) Julia by Ferrolho (brute-force)
+```julia
+cake(x,k=length(x))=max(0,[l for l=2:k for s=0:k-l if sum(x[s+1:s+l])==l/2]...)
+```
+
+### (91) Haskell by Hugo (brute-force)
+```haskell
+cake k=2*(foldl max 0[a|(a,b)<-(both length.partition(0==))<$>(tail.inits=<<tails k),a==b])
+```
+
 ### (94) Javascript by Restivo (works with big input)
 ```javascript
 cake=c=>{h={0:-1};m=t=0;c.map((s,i)=>{t+=s*2-1;h[t]?m=Math.max(m,i-h[t]):h[t]=''+i});return m}
@@ -52,4 +62,20 @@ cake=c=>{h={0:-1};m=t=0;c.map((s,i)=>{t+=s*2-1;h[t]?m=Math.max(m,i-h[t]):h[t]=''
 ### (112) Python by Duarte (O(N³))
 ```python
 cake=lambda a,l=len,g=range:max([l(r)for r in[a[i:j+1]for i in g(l(a))for j in g(i,l(a))]if sum(r)==l(r)/2]+[0])
+```
+
+### (115) JavaScript by André Silva (O(n))
+```javascript
+cake=d=>{[c,s,m]=[{0:-1},0,0];for(i=0;i<d.length;i++){s+=d[i]==0?1:-1;c[s]?(t=i-c[s],t+1>m?m=t:0):c[s]=i;}return m;}
+```
+
+### (140) Scala by André Silva (O(n²))
+```scala
+def cake(d:Seq[Int])={var m=0;for(i<-0 to d.length-1){var c=0;for(j<-i to d.length-1){if(d(j)==0)c-=1 else c+=1;if(c==0&&m<j-i+1)m=j-i+1}};m}
+```
+
+### (167) Scala by André Silva (O(n))
+```scala
+import scala.collection.mutable.Map;
+def cake(d:Seq[Int])={var(c,s,m)=(Map[Int,Int](),0,0);c(0)= -1;for(i<-0 to d.length-1){s+=(if(d(i)==0)1 else -1);try{val d=i-c(s);if(d>m+1)m=d}catch{case _=>c(s)=i}};m}
 ```
