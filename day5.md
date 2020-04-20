@@ -59,6 +59,11 @@ cake k=2*(foldl max 0[a|(a,b)<-(both length.partition(0==))<$>(tail.inits=<<tail
 cake=c=>{h={0:-1};m=t=0;c.map((s,i)=>{t+=s*2-1;h[t]?m=Math.max(m,i-h[t]):h[t]=''+i});return m}
 ```
 
+### (112) Python by Duarte (O(N³))
+```python
+cake=lambda a,l=len,g=range:max([l(r)for r in[a[i:j+1]for i in g(l(a))for j in g(i,l(a))]if sum(r)==l(r)/2]+[0])
+```
+
 ### (115) JavaScript by André Silva (O(n))
 ```javascript
 cake=d=>{[c,s,m]=[{0:-1},0,0];for(i=0;i<d.length;i++){s+=d[i]==0?1:-1;c[s]?(t=i-c[s],t+1>m?m=t:0):c[s]=i;}return m;}
