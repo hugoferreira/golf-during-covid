@@ -48,3 +48,8 @@ cake([0,1,0,1,0,1,0,1,0,1,0,1,0,1,0,1,0,1,0,1,0,1,0,1,0,1,0,1]) -> 28
 ```javascript
 cake=c=>{h={0:-1};m=t=0;c.map((s,i)=>{t+=s*2-1;h[t]?m=Math.max(m,i-h[t]):h[t]=''+i});return m}
 ```
+
+### (112) Python by Duarte (O(N³))
+```python
+cake=lambda a,l=len,g=range:max([l(r)for r in[a[i:j+1]for i in g(l(a))for j in g(i,l(a))]if sum(r)==l(r)/2]+[0])
+```
