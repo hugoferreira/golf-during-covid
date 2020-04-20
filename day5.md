@@ -41,3 +41,10 @@ cake([0,0,0,1,1,1,0,0,1,1,0,1,1,1,0,0,0,1,1,0,1,1,0,1,0,1,0,1]) -> 20
 
 cake([0,1,0,1,0,1,0,1,0,1,0,1,0,1,0,1,0,1,0,1,0,1,0,1,0,1,0,1]) -> 28
 ```
+
+## Solutions
+
+### (94) Javascript by Restivo (works with big input)
+```javascript
+cake=c=>{h={0:-1};m=t=0;c.map((s,i)=>{t+=s*2-1;h[t]?m=Math.max(m,i-h[t]):h[t]=''+i});return m}
+```
