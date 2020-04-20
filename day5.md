@@ -44,6 +44,11 @@ cake([0,1,0,1,0,1,0,1,0,1,0,1,0,1,0,1,0,1,0,1,0,1,0,1,0,1,0,1]) -> 28
 
 ## Solutions
 
+### (91) Haskell by Hugo (brute-force)
+```haskell
+cake k=2*(foldl max 0[a|(a,b)<-(both length.partition(0==))<$>(tail.inits=<<tails k),a==b])
+```
+
 ### (94) Javascript by Restivo (works with big input)
 ```javascript
 cake=c=>{h={0:-1};m=t=0;c.map((s,i)=>{t+=s*2-1;h[t]?m=Math.max(m,i-h[t]):h[t]=''+i});return m}
