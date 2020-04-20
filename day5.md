@@ -44,6 +44,11 @@ cake([0,1,0,1,0,1,0,1,0,1,0,1,0,1,0,1,0,1,0,1,0,1,0,1,0,1,0,1]) -> 28
 
 ## Solutions
 
+### (79) Julia by Ferrolho (brute-force)
+```julia
+cake(x,k=length(x))=max(0,[l for l=2:k for s=0:k-l if sum(x[s+1:s+l])==l/2]...)
+```
+
 ### (91) Haskell by Hugo (brute-force)
 ```haskell
 cake k=2*(foldl max 0[a|(a,b)<-(both length.partition(0==))<$>(tail.inits=<<tails k),a==b])
