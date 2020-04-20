@@ -53,3 +53,19 @@ cake k=2*(foldl max 0[a|(a,b)<-(both length.partition(0==))<$>(tail.inits=<<tail
 ```javascript
 cake=c=>{h={0:-1};m=t=0;c.map((s,i)=>{t+=s*2-1;h[t]?m=Math.max(m,i-h[t]):h[t]=''+i});return m}
 ```
+
+### (115) JavaScript by André Silva (O(n))
+```javascript
+cake=d=>{[c,s,m]=[{0:-1},0,0];for(i=0;i<d.length;i++){s+=d[i]==0?1:-1;c[s]?(t=i-c[s],t+1>m?m=t:0):c[s]=i;}return m;}
+```
+
+### (140) Scala by André Silva (O(n²))
+```scala
+def cake(d:Seq[Int])={var m=0;for(i<-0 to d.length-1){var c=0;for(j<-i to d.length-1){if(d(j)==0)c-=1 else c+=1;if(c==0&&m<j-i+1)m=j-i+1}};m}
+```
+
+### (167) Scala by André Silva (O(n))
+```scala
+import scala.collection.mutable.Map;
+def cake(d:Seq[Int])={var(c,s,m)=(Map[Int,Int](),0,0);c(0)= -1;for(i<-0 to d.length-1){s+=(if(d(i)==0)1 else -1);try{val d=i-c(s);if(d>m+1)m=d}catch{case _=>c(s)=i}};m}
+```
