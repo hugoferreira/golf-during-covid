@@ -59,6 +59,25 @@ cake k=2*(foldl max 0[a|(a,b)<-(both length.partition(0==))<$>(tail.inits=<<tail
 cake=c=>{h={0:-1};m=t=0;c.map((s,i)=>{t+=s*2-1;h[t]?m=Math.max(m,i-h[t]):h[t]=''+i});return m}
 ```
 
+### (105) Python by António
+
+Be aware the statements inside the for loop are indented with tabs while the rest is with spaces.
+This only works on Python 2 and saves 1 character in each line (1 tab instead of 2 spaces).
+
+```python
+from builtins import enumerate as n
+from builtins import max as t
+
+def cake(l):
+ d=r=0
+ m={0:-1}
+ for i,e in n(l):
+	d+=e*2-1
+	r=t(r,i-m.get(d,i))
+	m[d]=m.get(d,i)
+ return r
+```
+
 ### (112) Python by Duarte (O(n³))
 ```python
 cake=lambda a,l=len,g=range:max([l(r)for r in[a[i:j+1]for i in g(l(a))for j in g(i,l(a))]if sum(r)==l(r)/2]+[0])
