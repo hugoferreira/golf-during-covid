@@ -44,6 +44,12 @@ cake([0,1,0,1,0,1,0,1,0,1,0,1,0,1,0,1,0,1,0,1,0,1,0,1,0,1,0,1]) -> 28
 
 ## Solutions
 
+### (44) APL by Rui (O(n²))
+
+```apl
+cake←{1>⍴⍵:0⋄(∇1↓⍵)⌈⌈/(⍳⍴⍵)×0=¨+\{2×⍵-.5}¨⍵}
+```
+
 ### (79) Julia by Ferrolho (brute-force)
 ```julia
 cake(x,k=length(x))=max(0,[l for l=2:k for s=0:k-l if sum(x[s+1:s+l])==l/2]...)
