@@ -60,12 +60,12 @@ cake(x,k=length(x))=max(0,[l for l=2:k for s=0:k-l if sum(x[s+1:s+l])==l/2]...)
 cake k=2*(foldl max 0[a|(a,b)<-(both length.partition(0==))<$>(tail.inits=<<tails k),a==b])
 ```
 
-### (94) Javascript by Restivo (works with big input)
+### (94) Javascript by Restivo (O(n))
 ```javascript
 cake=c=>{h={0:-1};m=t=0;c.map((s,i)=>{t+=s*2-1;h[t]?m=Math.max(m,i-h[t]):h[t]=''+i});return m}
 ```
 
-### (105) Python by António
+### (105) Python by António (O(n))
 
 Be aware the statements inside the for loop are indented with tabs while the rest is with spaces.
 This only works on Python 2 and saves 1 character in each line (1 tab instead of 2 spaces).
