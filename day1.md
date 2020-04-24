@@ -21,6 +21,11 @@ minFree of 10, 5, 9, 2, 24, 3, 1 returns 4
 
 ## Solutions
 
+### (21) APL by Hugo
+```apl
+minfree←{((⍳⍴⍵)∊⍵)⍳0}
+```
+
 ### (22) Haskell by Hugo
 
 ```haskell
