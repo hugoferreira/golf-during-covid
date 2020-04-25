@@ -20,9 +20,9 @@ msc of 10,3,4,5,2 is 2
 
 ## Solutions
 
-### (22) APL by Hugo
+### (20) APL by Hugo
 ```apl
-msc←{⌈/+/¨(↓∘⍵¨⍳⍴⍵)>⍵}
+msc←{⌈/+/¨⍵<↓∘⍵¨⍳⍴⍵}
 ```
 
 ### (42) APL by Hugo
