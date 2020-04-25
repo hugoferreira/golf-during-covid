@@ -20,7 +20,12 @@ msc of 10,3,4,5,2 is 2
 
 ## Solutions
 
-### (42) APL by Sereno
+### (28) APL by Hugo
+```apl
+msc←{⌈/+/¨(((↓∘⍵)¨(⍳⍴⍵))>⍵)}
+```
+
+### (42) APL by Hugo
 ```apl
 msc←{1>⍴⍵:0⋄H←(1↑⍵)⋄(+/{H<⍵}¨(1↓⍵))⌈∇(1↓⍵)}
 ```
