@@ -18,11 +18,13 @@ niven←⍸0=⍳|⍨1⊥10⊥⍣¯1⍳
 
 You can read about this [here](http://hugosereno.eu/blog/2020/04/26/golfing-in-apl-during-covid/) or [try it online](https://tio.run/##SyzI0U2pTMzJT///Py@zLDXvUduER707DGwf9W6uedS7wvBR11JDAyDxqHfxofWGQNH/j/qmKgBVKYCVKxgaGPwHAA).
 
-### (54) JavaScript by Restivo [try it online](https://tio.run/##y0osSyxOLsosKNEts/j/Py@zLDXPNt7Wrjotv0gjz9bQOs/G0ABIamtr5qlq5OkbGmjnqRoa1Bho1tQUFGXmlWjkadZCtGlo/gcA)
+### (54) JavaScript by Restivo 
 
 ```javascript
 niven=_=>{for(n=0;n<101;n++)n%(n/10+n%10|0)||print(n)}
 ```
+
+[try it online](https://tio.run/##y0osSyxOLsosKNEts/j/Py@zLDXPNt7Wrjotv0gjz9bQOs/G0ABIamtr5qlq5OkbGmjnqRoa1Bho1tQUFGXmlWjkadZCtGlo/gcA)
 
 ### (66) Haskell by Mafalda
 ```haskell
