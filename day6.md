@@ -18,6 +18,12 @@ niven←⍸0=⍳|⍨1⊥10⊥⍣¯1⍳
 
 You can read about this [here](http://hugosereno.eu/blog/2020/04/26/golfing-in-apl-during-covid/) or [try it online](https://tio.run/##SyzI0U2pTMzJT///Py@zLDXvUduER707DGwf9W6uedS7wvBR11JDAyDxqHfxofWGQNH/j/qmKgBVKYCVKxgaGPwHAA).
 
+### (61) JavaScript by Restivo
+
+```javascript
+niven=_=>{for(n=0;n<101;n++)n%(n/10+n%10|0)?_:console.log(n)}
+```
+
 ### (71) Python by Mafalda
 ```python
 def niven():[print(n)for n in range(1,101)if n%sum(map(int,str(n)))==0]
