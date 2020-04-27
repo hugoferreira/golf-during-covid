@@ -16,6 +16,8 @@ Source: https://code-golf.io/niven-numbers
 niven←⍸0=⍳|⍨1⊥10⊥⍣¯1⍳
 ```
 
+You can read about this [here](http://hugosereno.eu/blog/2020/04/26/golfing-in-apl-during-covid/).
+
 ### (71) Python by Mafalda
 ```python
 def niven():[print(n)for n in range(1,101)if n%sum(map(int,str(n)))==0]
