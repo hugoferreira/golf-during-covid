@@ -9,3 +9,8 @@ Write a function/method named `niven` which prints all the niven numbers from 0 
 Source: https://code-golf.io/niven-numbers
 
 ## Solutions
+
+### (71) Python by Mafalda
+```python
+def niven():[print(n)for n in range(1,101)if n%sum(map(int,str(n)))==0]
+```
