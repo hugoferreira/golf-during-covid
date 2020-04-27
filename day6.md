@@ -15,3 +15,8 @@ Source: https://code-golf.io/niven-numbers
 ```apl
 niven←⍸0=⍳|⍨1⊥10⊥⍣¯1⍳
 ```
+
+### (71) Python by Mafalda
+```python
+def niven():[print(n)for n in range(1,101)if n%sum(map(int,str(n)))==0]
+```
