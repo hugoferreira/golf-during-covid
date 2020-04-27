@@ -16,7 +16,7 @@ Source: https://code-golf.io/niven-numbers
 niven←⍸0=⍳|⍨1⊥10⊥⍣¯1⍳
 ```
 
-You can read about this [here](http://hugosereno.eu/blog/2020/04/26/golfing-in-apl-during-covid/).
+You can read about this [here](http://hugosereno.eu/blog/2020/04/26/golfing-in-apl-during-covid/) or [try it online](https://tio.run/##SyzI0U2pTMzJT///Py@zLDXvUduER707DGwf9W6uedS7wvBR11JDAyDxqHfxofWGQNH/j/qmKgBVKYCVKxgaGPwHAA).
 
 ### (71) Python by Mafalda
 ```python
