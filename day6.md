@@ -29,9 +29,9 @@ niven=_=>{for(n=0;n<101;n++)n%(n/10+n%10|0)||console.log(n)}
 niven=[x|x<-[1..100],x`mod`(sum(map(\x->read[x]::Int)(show x)))<1]
 ```
 
-### (71) Python by Mafalda
+### (62) Python by Mafalda
 ```python
-def niven():[print(n)for n in range(1,101)if n%sum(map(int,str(n)))==0]
+def niven():[print(n)for n in range(1,101)if n%(n//10+n%10)<1]
 ```
 
 ### (73) Python by Duarte
