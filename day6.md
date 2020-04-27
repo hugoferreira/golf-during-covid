@@ -9,3 +9,9 @@ Write a function/method named `niven` which prints all the niven numbers from 0 
 Source: https://code-golf.io/niven-numbers
 
 ## Solutions
+
+### (21) APL by Hugo
+
+```apl
+niven←⍸0=⍳|⍨1⊥10⊥⍣¯1⍳
+```
