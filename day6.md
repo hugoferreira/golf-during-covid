@@ -24,6 +24,11 @@ You can read about this [here](http://hugosereno.eu/blog/2020/04/26/golfing-in-a
 niven=_=>{for(n=0;n<101;n++)n%(n/10+n%10|0)?_:console.log(n)}
 ```
 
+### (66) Haskell by Mafalda
+```haskell
+niven=[x|x<-[1..100],x`mod`(sum(map(\x->read[x]::Int)(show x)))<1]
+```
+
 ### (71) Python by Mafalda
 ```python
 def niven():[print(n)for n in range(1,101)if n%sum(map(int,str(n)))==0]
