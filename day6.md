@@ -26,14 +26,14 @@ niven=_=>{for(n=0;n<101;n++)n%(n/10+n%10|0)||print(n)}
 
 [try it online](https://tio.run/##y0osSyxOLsosKNEts/j/Py@zLDXPNt7Wrjotv0gjz9bQOs/G0ABIamtr5qlq5OkbGmjnqRoa1Bho1tQUFGXmlWjkadZCtGlo/gcA)
 
-### (66) Haskell by Mafalda
-```haskell
-niven=[x|x<-[1..100],x`mod`(sum(map(\x->read[x]::Int)(show x)))<1]
-```
-
 ### (62) Python by Mafalda
 ```python
 def niven():[print(n)for n in range(1,101)if n%(n//10+n%10)<1]
+```
+
+### (66) Haskell by Mafalda
+```haskell
+niven=[x|x<-[1..100],x`mod`(sum(map(\x->read[x]::Int)(show x)))<1]
 ```
 
 ### (73) Python by Duarte
