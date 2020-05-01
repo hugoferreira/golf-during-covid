@@ -42,6 +42,12 @@ def niven():[print(n)for n in range(1,101)if n%(n//10+n%10)<1]
 niven=[x|x<-[1..100],x`mod`(sum(map(\x->read[x]::Int)(show x)))<1]
 ```
 
+### (72) Python by António
+
+```python
+def niven():[print(i)for i in range(1,101)if not i%sum(map(int,str(i)))]
+```
+
 ### (73) Python by Duarte
 
 ```python
