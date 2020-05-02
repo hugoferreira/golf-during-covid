@@ -76,5 +76,5 @@ top string matches the bottom string.
 `pcp {(a, a), (b, b)}` -> `a` or `b` or `aa` or `ab` or ...  
 `pcp {(c, ab), (aa, b)}` -> `no`  
 `pcp {(ab, aa), (bba, bb), (a, baa)}` -> `bbaabbbaa`  
-`pcp {(baa, b), (ba, baa), (ba, aba), (ab, bba)} -> `baabbaababbabbabaabbaabbaababbaababbabbaababbabbabaabbbabbabaabababbabbababbabbabbabaabbaabbbababbaababbabbaabbbabbabaabbbabbababbabbababbababbaabbbabbaba`  
+`pcp {(baa, b), (ba, baa), (ba, aba), (ab, bba)}` -> `baabbaababbabbabaabbaabbaababbaababbabbaababbabbabaabbbabbabaabababbabbababbabbabbabaabbaabbbababbaababbabbaabbbabbabaabbbabbababbabbababbababbaabbbabbaba`  
 `pcp {(baa, b), (a, baa), (b, a)}` -> `no`  
