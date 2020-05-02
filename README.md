@@ -44,5 +44,5 @@ Why not?... Just submit a Pull Request.
 
 ## Can I challenge you guys?
 
-Why not?... Just submit a Pull Request. We have a one—problem-per—week rule now, after the untoward weekend of April 18th.
+Why not?... Just submit a Pull Request. We now have a one-problem-per-week-rule™, after the untoward weekend of April 18th.
 
