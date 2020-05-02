@@ -36,6 +36,9 @@ output is `no`.
 
 Any matching string solves the task (or `no` if no solution is possible).
 
+At most, 100 domino pieces should be used for the solution. If no solution is
+found with 100 or less pieces, the output should be `no`.
+
 The input set is not empty, it does not have repeated dominoes and it is not
 necessary to use all dominoes from input in the solution. An empty solution (e.g
 not using any domino) is not allowed.
@@ -72,4 +75,6 @@ top string matches the bottom string.
 `pcp {(abc, ab), (ca, a), (acc, ba)}` -> `no`  
 `pcp {(a, a), (b, b)}` -> `a` or `b` or `aa` or `ab` or ...  
 `pcp {(c, ab), (aa, b)}` -> `no`  
-`pcp {(ab, aa), (bba, bb), (a, baa)}` -> `bbaabbbaa`
+`pcp {(ab, aa), (bba, bb), (a, baa)}` -> `bbaabbbaa`  
+`pcp {(baa, b), (ba, baa), (ba, aba), (ab, bba)} -> `baabbaababbabbabaabbaabbaababbaababbabbaababbabbabaabbbabbabaabababbabbababbabbabbabaabbaabbbababbaababbabbaabbbabbabaabbbabbababbabbababbababbaabbbabbaba`  
+`pcp {(baa, b), (a, baa), (b, a)}` -> `no`  
