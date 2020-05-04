@@ -78,3 +78,20 @@ top string matches the bottom string.
 `pcp {(ab, aa), (bba, bb), (a, baa)}` -> `bbaabbbaa`  
 `pcp {(baa, b), (ba, baa), (ba, aba), (ab, bba)}` -> `baabbaababbabbabaabbaabbaababbaababbabbaababbabbabaabbbabbabaabababbabbababbabbabbabaabbaabbbababbaababbabbaabbbabbabaabbbabbababbabbababbababbaabbbabbaba`  
 `pcp {(baa, b), (a, baa), (b, a)}` -> `no`  
+
+
+## Solutions
+
+### (225) Python by Duarte (non-deterministic runs 🤪) ([Try it online!](https://tio.run/##bZFNasMwEIX3PsVAFxqlIcS0hWDqk5gsRrJDXIwkZJnSlp7d1Y@VOGk2Rm/mzfdGsvlyZ61eDsbOc9udwEiDI68KCEKjCUc4aQst9ArGoKA/4VTVjO0@dK@w2Xz3Bjeoqto8N@2R82Oz99@6xuGfS/lm6ZuV7dxkFUyJB0OnUPH3cl8CqRan3ejIuvGzd2ccuI8f1pWJ8@CyVa391AVmC8insGNsNz6sG8YOmNJsNrZXDsMdf5AJybbAJDG@BWQUBIkkZFJLZzEy/sujR1Io8eKGtrgeE2TsCVoQfpX76ZVbRG9Ou3fepBCtvQ@wkUUZLJJdrG4sKC/luyRE1MUTJEz4Lfm1RM6KqOvwVZK4vFjKiWhfKd9e@fwH "Python 3.8  – Try It Online"))
+
+```python
+def pcp(s):
+ def o(p):
+  for d in s:
+   if(u:=''.join([*zip(*(n:=p+[d]))][0]))==(l:=''.join([*zip(*n)][1])):return u
+   if len(n)<101 and(u.startswith(l)or l.startswith(u))and(r:=o(n)):return r
+ return r if(r:=o([]))else 'no'
+
+# print(pcp({('bc', 'ca'), ('a', 'ab'), ('ca', 'a'), ('abc', 'c')}), 'abcaabc')
+```
+
