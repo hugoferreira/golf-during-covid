@@ -91,6 +91,12 @@ import Data.List
 pcp x=maybe"no"fst$listToMaybe$catMaybes$map(\n->find(uncurry(==))$map(foldl(\(a,b)(c,d)->(a++c,b++d))("",""))$replicateM n x)[1..100]
 ```
 
+### (174) JavaScript by Restivo (works for 100 tiles) ([Try it online](https://tio.run/##TY7BboQgFEV/hR28aI3umtDX3@iCsABHK4aIAWYKcfx2i2OadPNyzr15yZ3VQ4XemzW@Pd6PY@1XtPi5BRSC0ppSKfkNW/4zGTuwW1V9dG0HW0Qh@eg8M8SNJMCJ84kWtoRGtLKay@G5cHdyJ7kZWULM4Id49wtJr6AJUfkYvkycWIbnM/8PEkBs1nuYmEh1lsD3gHG//uni6H70bgnODo1136xMZ2W01orWhGoqa1LsEqWK/pnS6iqVfpWnSoDjFw))
+
+```javascript
+pcp=l=>{s=[['','']];d=0;while(d++<101){t=[];for(i of s)for(j of l){x=i[0]+j[0];y=i[1]+j[1];if(x==y)return x;if(x.startsWith(y)||y.startsWith(x))t.push([x,y]);}s=t}return'no'}
+```
+
 ### (225) Python by Duarte (non-deterministic runs 🤪) ([Try it online!](https://tio.run/##bZFNasMwEIX3PsVAFxqlIcS0hWDqk5gsRrJDXIwkZJnSlp7d1Y@VOGk2Rm/mzfdGsvlyZ61eDsbOc9udwEiDI68KCEKjCUc4aQst9ArGoKA/4VTVjO0@dK@w2Xz3Bjeoqto8N@2R82Oz99@6xuGfS/lm6ZuV7dxkFUyJB0OnUPH3cl8CqRan3ejIuvGzd2ccuI8f1pWJ8@CyVa391AVmC8insGNsNz6sG8YOmNJsNrZXDsMdf5AJybbAJDG@BWQUBIkkZFJLZzEy/sujR1Io8eKGtrgeE2TsCVoQfpX76ZVbRG9Ou3fepBCtvQ@wkUUZLJJdrG4sKC/luyRE1MUTJEz4Lfm1RM6KqOvwVZK4vFjKiWhfKd9e@fwH "Python 3.8  – Try It Online"))
 
 ```python
