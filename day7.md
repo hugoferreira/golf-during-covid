@@ -82,6 +82,12 @@ top string matches the bottom string.
 
 ## Solutions
 
+### (133) Haskell by André Silva
+
+```haskell
+pcp x=maybe"no"fst$listToMaybe$catMaybes$map(\n->find(uncurry(==))$map(foldl(\(a,b)(c,d)->(a++c,b++d))("",""))$replicateM n x)[1..100]
+```
+
 ### (225) Python by Duarte (non-deterministic runs 🤪) ([Try it online!](https://tio.run/##bZFNasMwEIX3PsVAFxqlIcS0hWDqk5gsRrJDXIwkZJnSlp7d1Y@VOGk2Rm/mzfdGsvlyZ61eDsbOc9udwEiDI68KCEKjCUc4aQst9ArGoKA/4VTVjO0@dK@w2Xz3Bjeoqto8N@2R82Oz99@6xuGfS/lm6ZuV7dxkFUyJB0OnUPH3cl8CqRan3ejIuvGzd2ccuI8f1pWJ8@CyVa391AVmC8insGNsNz6sG8YOmNJsNrZXDsMdf5AJybbAJDG@BWQUBIkkZFJLZzEy/sujR1Io8eKGtrgeE2TsCVoQfpX76ZVbRG9Ou3fepBCtvQ@wkUUZLJJdrG4sKC/luyRE1MUTJEz4Lfm1RM6KqOvwVZK4vFjKiWhfKd9e@fwH "Python 3.8  – Try It Online"))
 
 ```python
