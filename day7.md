@@ -82,9 +82,12 @@ top string matches the bottom string.
 
 ## Solutions
 
-### (133) Haskell by André Silva
+### (132) Haskell by André Silva
 
 ```haskell
+import Control.Monad
+import Data.Maybe
+import Data.List
 pcp x=maybe"no"fst$listToMaybe$catMaybes$map(\n->find(uncurry(==))$map(foldl(\(a,b)(c,d)->(a++c,b++d))("",""))$replicateM n x)[1..100]
 ```
 
